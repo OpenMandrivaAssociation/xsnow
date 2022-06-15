@@ -6,7 +6,8 @@ Summary:        Let it snow on your desktop
 License:        GPLv3+
 URL:            https://sourceforge.net/projects/xsnow/
 Source0:        https://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
- 
+Patch0:         snow-bindir.patch
+
 BuildRequires:  make
 BuildRequires:  pkgconfig(x11)
 BuildRequires:  pkgconfig(xt)
@@ -49,7 +50,7 @@ desktop-file-validate \
 appstream-util validate-relax --nonet %{buildroot}%{_metainfodir}/*.appdata.xml
  
 %files
-#{_prefix}/games/%{name}
+%{_bindir}/%{name}
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/icons/hicolor/scalable/apps/%{name}.svg
 %{_mandir}/man6/%{name}.6*
