@@ -28,7 +28,7 @@ Xsnow runs in GNOME, KDE, FVWM and desktops that are derived from those.
 %autosetup -p1
 
 # Fix Makefile
-sed -i 's!$(exec_prefix)/games!$(exec_prefix)/bin!' src/Makefile.in
+#sed -i 's!$(exec_prefix)/games!$(exec_prefix)/bin!' src/Makefile.in
  
 %build
 %configure --disable-selfrep
@@ -49,7 +49,7 @@ desktop-file-validate \
 appstream-util validate-relax --nonet %{buildroot}%{_metainfodir}/*.appdata.xml
  
 %files
-#{_bindir}/%{name}
+#{_prefix}/games/%{name}
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/icons/hicolor/scalable/apps/%{name}.svg
 %{_mandir}/man6/%{name}.6*
