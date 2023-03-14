@@ -6,7 +6,7 @@ Summary:        Let it snow on your desktop
 License:        GPLv3+
 URL:            https://sourceforge.net/projects/xsnow/
 Source0:        https://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
-Patch0:         snow-bindir.patch
+#Patch0:         snow-bindir.patch
 
 BuildRequires:  make
 BuildRequires:  pkgconfig(x11)
