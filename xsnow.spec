@@ -1,6 +1,6 @@
 Name:           xsnow
 Version:        3.5.3
-Release:        1
+Release:        2
 Summary:        Let it snow on your desktop
  
 License:        GPLv3+
