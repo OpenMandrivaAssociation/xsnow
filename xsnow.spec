@@ -50,7 +50,7 @@ desktop-file-validate \
 appstream-util validate-relax --nonet %{buildroot}%{_metainfodir}/*.appdata.xml
  
 %files
-%{_bindir}/%{name}
+#{_bindir}/%{name}
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/icons/hicolor/scalable/apps/%{name}.svg
 %{_mandir}/man6/%{name}.6*
