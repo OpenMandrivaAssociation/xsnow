@@ -1,5 +1,5 @@
 Name:           xsnow
-Version:        3.7.1
+Version:        3.7.6
 Release:        1
 Summary:        Let it snow on your desktop
  
