@@ -6,7 +6,7 @@ diff -uraN xsnow-3.7.6/src/Makefile.am omv-xsnow-3.7.6/src/Makefile.am
  TOASCII  = $(top_srcdir)/src/toascii.sh
  
 -gamesdir = $(exec_prefix)/games
-+gamesdir = $(exec_prefix)/bim
++gamesdir = $(exec_prefix)/bin
  games_PROGRAMS = xsnow
  
  xsnow_CPPFLAGS    = $(GTK_CFLAGS) $(X11_CFLAGS) $(GSL_CFLAGS) -DLOCALEDIR=\"$(LOCALEDIR)\" \
