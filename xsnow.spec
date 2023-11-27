@@ -1,8 +1,8 @@
 Name:           xsnow
-Version:        3.5.3
-Release:        2
+Version:        3.7.6
+Release:        1
 Summary:        Let it snow on your desktop
- 
+Group:          System/X11
 License:        GPLv3+
 URL:            https://sourceforge.net/projects/xsnow/
 Source0:        https://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
@@ -48,8 +48,10 @@ desktop-file-validate \
  
 # Validate AppData file
 appstream-util validate-relax --nonet %{buildroot}%{_metainfodir}/*.appdata.xml
+
+%find_lang %{name}
  
-%files
+%files -f %{name}.lang
 %{_bindir}/%{name}
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/icons/hicolor/scalable/apps/%{name}.svg
