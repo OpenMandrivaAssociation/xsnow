@@ -1,6 +1,6 @@
-diff -uraN xsnow-3.7.6/src/Makefile.am omv-xsnow-3.7.6/src/Makefile.am
---- xsnow-3.7.6/src/Makefile.am	2023-11-17 12:59:36.000000000 +0100
-+++ omv-xsnow-3.7.6/src/Makefile.am	2023-11-27 16:23:57.770549259 +0100
+diff -uraN xsnow-3.7.7/src/Makefile.am omv-xsnow-3.7.7/src/Makefile.am
+--- xsnow-3.7.7/src/Makefile.am	2024-01-17 15:12:24.000000000 +0100
++++ omv-xsnow-3.7.7/src/Makefile.am	2024-01-19 18:42:01.099566175 +0100
 @@ -23,7 +23,7 @@
  TOCC     = $(top_srcdir)/src/tocc.sh
  TOASCII  = $(top_srcdir)/src/toascii.sh
@@ -9,11 +9,11 @@ diff -uraN xsnow-3.7.6/src/Makefile.am omv-xsnow-3.7.6/src/Makefile.am
 +gamesdir = $(exec_prefix)/bin
  games_PROGRAMS = xsnow
  
- xsnow_CPPFLAGS    = $(GTK_CFLAGS) $(X11_CFLAGS) $(GSL_CFLAGS) -DLOCALEDIR=\"$(LOCALEDIR)\" \
-diff -uraN xsnow-3.7.6/src/Makefile.in omv-xsnow-3.7.6/src/Makefile.in
---- xsnow-3.7.6/src/Makefile.in	2023-11-17 12:59:36.000000000 +0100
-+++ omv-xsnow-3.7.6/src/Makefile.in	2023-11-27 16:24:20.873828666 +0100
-@@ -650,7 +650,7 @@
+ noinst_PROGRAMS = makeman
+diff -uraN xsnow-3.7.7/src/Makefile.in omv-xsnow-3.7.7/src/Makefile.in
+--- xsnow-3.7.7/src/Makefile.in	2024-01-17 15:12:24.000000000 +0100
++++ omv-xsnow-3.7.7/src/Makefile.in	2024-01-19 18:42:23.023016961 +0100
+@@ -665,7 +665,7 @@
  SUBDIRS = Pixmaps
  TOCC = $(top_srcdir)/src/tocc.sh
  TOASCII = $(top_srcdir)/src/toascii.sh
