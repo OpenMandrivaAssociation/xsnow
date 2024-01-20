@@ -9,6 +9,7 @@ Source0:        https://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar
 Patch0:         snow-bindir.patch
 
 BuildRequires:  make
+BuildRequires:  gettext
 BuildRequires:  pkgconfig(x11)
 BuildRequires:  pkgconfig(xt)
 BuildRequires:  pkgconfig(xpm)
