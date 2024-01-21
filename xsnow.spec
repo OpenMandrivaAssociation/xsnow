@@ -33,7 +33,9 @@ Xsnow runs in GNOME, KDE, FVWM and desktops that are derived from those.
 #sed -i 's!$(exec_prefix)/games!$(exec_prefix)/bin!' src/Makefile.in
  
 %build
-%configure --disable-selfrep --disable-man
+export CC=gcc
+export CXX=g++
+%configure --disable-selfrep
 %make_build
  
 %install
