@@ -31,10 +31,11 @@ Xsnow runs in GNOME, KDE, FVWM and desktops that are derived from those.
 
 # Fix Makefile
 #sed -i 's!$(exec_prefix)/games!$(exec_prefix)/bin!' src/Makefile.in
+
+# Fix broken disable-selfrep
++ sed -i 's!    tarfile_inc =!tarfile_inc =!' src/Makefile.in 
  
 %build
-export CC=gcc
-export CXX=g++
 %configure --disable-selfrep
 %make_build
  
