@@ -36,7 +36,8 @@ Xsnow runs in GNOME, KDE, FVWM and desktops that are derived from those.
 sed -i 's!    tarfile_inc =!tarfile_inc =!' src/Makefile.in 
  
 %build
-%configure --disable-selfrep
+%configure 
+#--disable-selfrep
 %make_build
  
 %install
