@@ -8,6 +8,10 @@ URL:            https://sourceforge.net/projects/xsnow/
 Source0:        https://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 Patch0:         snow-bindir.patch
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
 BuildRequires:  make
 BuildRequires:  gettext
 BuildRequires:  pkgconfig(x11)
