@@ -1,5 +1,5 @@
 Name:           xsnow
-Version:        3.9.0
+Version:        3.9.9
 Release:        1
 Summary:        Let it snow on your desktop
 Group:          System/X11
